@@ -1,0 +1,8 @@
+{
+  "name": "UniGo - Sustainable Transport Planner",
+  "description": "AI-powered sustainable travel route planner for India. Discover eco-friendly public transit, electric ride-pooling, and bicycle combinations with real-time carbon footprint and duration metrics in a midnight green and gold aesthetic.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,71 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32' fill='none'>
+  <defs>
+    <!-- Leaf body gradient: bright lime apex down to lush forest green -->
+    <linearGradient id='leafBodyGrad' x1='0.1' y1='0.1' x2='0.8' y2='0.9'>
+      <stop offset='0%' stop-color='#96EE33'/>
+      <stop offset='30%' stop-color='#6FD31E'/>
+      <stop offset='70%' stop-color='#45A613'/>
+      <stop offset='100%' stop-color='#267008'/>
+    </linearGradient>
+    <linearGradient id='stemGrad' x1='0.2' y1='0' x2='0.8' y2='1'>
+      <stop offset='0%' stop-color='#65C51B'/>
+      <stop offset='100%' stop-color='#1E5F06'/>
+    </linearGradient>
+    <linearGradient id='sproutGrad' x1='0' y1='0' x2='1' y2='1'>
+      <stop offset='0%' stop-color='#A2F23A'/>
+      <stop offset='100%' stop-color='#3F9D10'/>
+    </linearGradient>
+    <filter id='arrowShadow' x='-25%' y='-25%' width='150%' height='150%'>
+      <feDropShadow dx='0.8' dy='1.4' stdDeviation='0.9' flood-color='#000000' flood-opacity='0.45'/>
+    </filter>
+  </defs>
+
+  <g filter='url(#arrowShadow)'>
+    <!-- Leaf Stem / Cursor Tail (angled down-right matching arrow cursor shaft) -->
+    <path d='M 7.8 17 
+             C 8.8 20 10.2 23.5 12.8 27.2
+             C 14 26.8 14.8 25.6 14 24.2
+             C 12.6 21.2 11.2 18.5 10.5 15.8 Z'
+          fill='url(#stemGrad)' stroke='#0A3618' stroke-width='1.4' stroke-linejoin='round' />
+
+    <!-- Mini sprout bud on stem tail -->
+    <path d='M 12 21.8 C 14 20.2 16.5 20.8 16.8 22 C 16.5 23.6 14.2 24.2 12.5 23.2 Z' 
+          fill='url(#sproutGrad)' stroke='#0A3618' stroke-width='1.1' stroke-linejoin='round' />
+    <path d='M 12.6 22.2 Q 14.5 21.8 16 22' stroke='#C6F76E' stroke-width='0.6' stroke-linecap='round' fill='none' />
+
+    <!-- Second mini sprout bud -->
+    <path d='M 13.2 24.2 C 14.8 23.8 17 24.2 17.2 25.5 C 16.4 26.8 14.2 26.5 13.2 25.2 Z' 
+          fill='url(#sproutGrad)' stroke='#0A3618' stroke-width='1.1' stroke-linejoin='round' />
+
+    <!-- Main Leaf Body shaped as the classic Cursor Arrow -->
+    <!-- Point at (2, 2) -> left edge -> notch -> right wing -> curves back to apex -->
+    <path d='M 2 2 
+             C 2.2 7 2.2 14.5 2.6 20.2 
+             C 2.9 21.8 4.5 21.2 7.8 17 
+             C 8.8 15.6 9.8 15.6 11 15.8
+             C 13.5 16.2 16.5 16.5 18 16.5 
+             C 19.5 16.5 19 15.2 17 13.8
+             C 13 10.2 8 5.8 2 2 Z' 
+          fill='url(#leafBodyGrad)' stroke='#0A3618' stroke-width='1.6' stroke-linejoin='round' stroke-linecap='round' />
+
+    <!-- Inner highlight rim along the left leading edge -->
+    <path d='M 2.7 3.2 C 2.9 8 2.8 14.5 3.3 19.2' 
+          stroke='#CEFC75' stroke-width='0.9' stroke-linecap='round' fill='none' opacity='0.85' />
+
+    <!-- Main Central Midrib / Vein (arcs from stem base to apex tip 2, 2) -->
+    <path d='M 9.5 16.2 C 8 12 5.5 7.2 2.4 2.4' 
+          stroke='#DCFB8C' stroke-width='1.2' stroke-linecap='round' fill='none' />
+
+    <!-- Branching Leaf Veins - Left blade -->
+    <path d='M 4 6.2 C 3.2 8.2 2.9 11.2 3.1 14.2' stroke='#B4F356' stroke-width='0.7' stroke-linecap='round' fill='none' />
+    <path d='M 5.8 10.2 C 4.8 12.5 4.3 15.2 4.9 17.5' stroke='#B4F356' stroke-width='0.7' stroke-linecap='round' fill='none' />
+
+    <!-- Branching Leaf Veins - Right blade -->
+    <path d='M 3.8 4.8 C 6 5.8 9 7.8 11.5 9.8' stroke='#B4F356' stroke-width='0.75' stroke-linecap='round' fill='none' />
+    <path d='M 5.8 8.5 C 8.5 9.5 12 11.5 14.5 13.2' stroke='#B4F356' stroke-width='0.75' stroke-linecap='round' fill='none' />
+    <path d='M 7.8 12.2 C 10.5 12.8 13.8 14.2 16.5 14.8' stroke='#B4F356' stroke-width='0.7' stroke-linecap='round' fill='none' />
+
+    <!-- Precision tip apex pixel -->
+    <circle cx='2.2' cy='2.2' r='0.6' fill='#FAF6EC' />
+  </g>
+</svg>
